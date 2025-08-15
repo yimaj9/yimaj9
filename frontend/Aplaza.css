@@ -1,0 +1,149 @@
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.7;
+  padding: 1rem;
+}
+
+/* === Header === */
+/* Header styles */
+header {
+  background-color: #ffffff; /* clean white background */
+  padding: none;
+  text-align: center; /* centers the logo horizontally */
+  box-shadow: 0 2px 5px rgba(243, 235, 235, 0.1); /* subtle shadow */
+}
+
+.logo-link img {
+  height: 90px;      /* a bit bigger */
+  width: 90px;
+  display: inline-block;
+}
+
+/* === Main Content === */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.project-detail h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.project-detail p,
+.project-detail li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.project-detail ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* === Gallery Section === */
+.gallery {
+  margin-top: 2rem;
+}
+
+.gallery h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-grid figure {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid figure:hover {
+  transform: scale(1.02);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.gallery-grid figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ccc;
+  margin-top: 3rem;
+}
+
+/* === Responsive Text === */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .project-detail h2 {
+    font-size: 1.6rem;
+  }
+
+  .gallery-grid img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid img {
+    height: 160px;
+  }
+}
+/* === Back Link Styling === */
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #381c1c;
+  font-weight: 600;
+  border: 2px solid #381c1c;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #381c1c;
+  color: #fff;
+}
+

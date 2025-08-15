@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link rel="stylesheet" href="haricon.css">
+ <link rel="icon" type="image/png" href="HARICON.png">
+</head>
+    <nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo-link">
+      <img src="logo.png" alt="HARICON Logo" />
+      <span class="logo-text">HARICON</span>
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about-e.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<br>
+<body>
+    <section class="section">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+
+      <div class="service">
+        <h3>General Building</h3>
+        <p>We construct commercial, residential, and public buildings with a focus on quality, safety, and structural precision.</p>
+      </div>
+
+      <div class="service">
+        <h3>Road Infrastructure Works</h3>
+        <p>We specialize in the construction and maintenance of roadways, ensuring safe and efficient transportation networks.</p>
+      </div>
+
+      <div class="service">
+        <h3>Machinery Services</h3>
+        <p>We provide and operate modern heavy-duty machinery for excavation, grading, earthworks, and foundation preparation.</p>
+      </div>
+
+      <div class="service">
+        <h3>Renovation</h3>
+        <p>We restore and upgrade existing structures with care and craftsmanship — enhancing both function and form.</p>
+      </div>
+
+       <div class="service">
+        <h3>Water Works </h3>
+        <p>We specialize in the maintenance of water supply, irrigation and drainage systems.</p>
+      </div>
+<div class="service">
+        <h3>Providing Construction Materials</h3>
+        <p>We supply high-quality construction materials to meet the needs of various projects.</p>
+      </div>
+
+    </div>
+  </div>    
+</section>
+<section>
+<section class="service-form-section">
+  <div class="container">
+    <h2 class="section-title">Request Our Service</h2>
+
+    <form class="service-request-form" action="https://api.web3forms.com/submit" method="POST">
+      <!-- Required Web3Forms key -->
+      <input type="hidden" name="access_key" value="9e2af7c5-ae10-45f3-be17-98cba38571b6">
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone" placeholder="Enter your phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="service">Select a Service</label>
+        <select name="service" id="service" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="General Building">General Building</option>
+          <option value="Machinery Installation">Machinery services </option>
+          <option value="Water Works">Water Works</option>
+          <option value="Renovation">Renovation</option>
+          <option value="Consulting">Consulting</option>
+          <option value="Construction">Construction materials </option>
+          <option value="Road Works">Road Works</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <br>
+
+      <button type="submit" class="submit-btn">Submit Request</button>
+    </form>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="logo.png" alt="HARICON Logo" class="footer-logo" style="height:40px; width:auto; margin-bottom:8px;">
+        <p class="footer-copy">© 2025 HARICON. All rights reserved.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="about-e.html">About</a></li>
+      </ul>
+      <div class="footer-contact">
+        <p><a href="mailto:info@haricon.com">info@haricon.com</a></p>
+        <p><a href="tel:+25196699991">+251 966 999 991</a></p>
+      </div>
+      <ul class="social-media">
+        <li><a href="https://web.facebook.com/profile.php?id=61577371787092" title="Facebook">Facebook</a></li>
+        <li><a href="https://x.com/HARICON2017" title="X">X</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+</section>
+
+</body>
+
+
+</html>
+<script src="haricon.js"></script>

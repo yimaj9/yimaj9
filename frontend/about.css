@@ -1,0 +1,437 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Navigation === */
+/* === Navbar Base === */
+.navbar {
+  width: 100%;
+  background-color: #6fde5c;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* === Logo === */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-brand img {
+  width: 40px;
+  height: auto;
+}
+
+.nav-brand h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #002244;
+}
+
+/* === Links === */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b1f0b7;
+}
+
+/* === Hamburger === */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #030d43;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* === Section Titles === */
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #06781f;
+}
+
+/* === Accordion === */
+.accordion-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+.accordion-toggle {
+  background-color: #f4fdf3;
+  color: #06781f;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-toggle:hover {
+  background-color: #d9f9d6;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9fff9;
+  padding: 0 1.5rem;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+  padding: 1rem 1.5rem;
+  max-height: 300px; /* Adjust if needed */
+}
+
+/* === Team Section === */
+/* CEO card bigger */
+.team-ceo-card {
+  max-width: 400px; /* bigger */
+  margin: 0 auto 3rem auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.team-ceo-card:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.team-ceo-card img {
+  width: 100%;
+  height: 300px;  /* taller */
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* Employee cards bigger */
+.team-card {
+  background: #fff;
+  flex: 0 1 240px;  /* increased width */
+  max-width: 240px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.team-card img {
+  width: 100%;
+  height: 220px;  /* taller */
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.team-card h3,
+.team-ceo-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #06781f;
+}
+
+.role {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Team row container stays the same */
+.team-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.board-members {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.board-members h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #06781f;
+}
+
+/* President Card Style */
+.board-president-card {
+  background-color: #ffffff;
+  border: 1px solid #daf7dc;
+  padding: 1.8rem;
+  margin: 0 auto 3rem auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.board-president-card:hover {
+  transform: translateY(-6px);
+  background-color: #ffffff;
+}
+
+.board-president-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.board-president-card h3 {
+  font-size: 1.3rem;
+  color: #1b1b1b;
+  margin: 0.5rem 0;
+}
+
+.board-president-card .role {
+  color: #068d18;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Other Board Cards */
+.board-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.board-card {
+  background-color: #f9fbff;
+  border: 1px solid #e0e0e0;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.board-card:hover {
+  background-color: #ffffff;
+  box-shadow: #6fde5c 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.board-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
+}
+
+.board-card h3 {
+  font-size: 1rem;
+  color: #222;
+  margin: 0;
+}
+.footer {
+  background: #181818;
+  color: #eee;
+  padding: 48px 20px 24px 20px;
+  border-top: 2px solid #2fd648;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: relative;
+}
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 180px;
+  gap: 8px;
+}
+.footer-logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 8px;
+}
+.footer-copy {
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 0;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-links li a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+.footer-links li a:hover {
+  color: #2fd648;
+}
+.footer-contact {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer-contact a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-contact a:hover {
+  color: #2fd648;
+}
+.social-media {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+}
+.social-media li a {
+  color: #eee;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+.social-media li a:hover {
+  color: #2fd648;
+}
+.back-to-top {
+  display: block;
+  text-align: center;
+  margin: 32px auto 0 auto;
+  color: #2fd648;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+.back-to-top:hover {
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .footer-brand, .footer-links, .footer-contact, .social-media {
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links, .social-media {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer-links {
+    gap: 18px;
+  }
+}
+
+/* Careers Section Styling */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

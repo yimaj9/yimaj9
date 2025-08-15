@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HARICON - Contact</title>
+  <link rel="stylesheet" href="haricon.css">
+<link rel="icon" type="image/png" href="HARICON.png">
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo-link">
+      <img src="logo.png" alt="HARICON Logo" />
+      <span class="logo-text">HARICON</span>
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about-e.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Section -->
+<section class="section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>If You Have Any Questions or Requests, Feel Free to Reach Out to Us.</p>
+  <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="9e2af7c5-ae10-45f3-be17-98cba38571b6">
+    <input type="text" name="name" required placeholder="Your Name">
+    <input type="email" name="email" required placeholder="Your Email">
+    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+    <button id="sbmit" type="submit">Send</button>
+
+</form>
+</div>
+</section>
+
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="logo.png" alt="HARICON Logo" class="footer-logo" style="height:40px; width:auto; margin-bottom:8px;">
+        <p class="footer-copy">© 2025 HARICON. All rights reserved.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="about-e.html">About</a></li>
+      </ul>
+      <div class="footer-contact">
+        <p><a href="mailto:info@haricon.com">info@haricon.com</a></p>
+        <p><a href="tel:+25196699991">+251 966 999 991</a></p>
+      </div>
+      <ul class="social-media">
+        <li><a href="https://web.facebook.com/profile.php?id=61577371787092" title="Facebook">Facebook</a></li>
+        <li><a href="https://x.com/HARICON2017" title="X">X</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+<script src="haricon.js"></script>
+</body>
+</html>

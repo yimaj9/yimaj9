@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Careers | HARICON</title>
+  <link rel="stylesheet" href="haricon.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="HARICON Logo" />
+        <span class="logo-text">HARICON</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="news.html">News</a>
+      <a href="careers.html" class="active-link">Careers</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</nav>
+
+<!-- Careers Intro -->
+<section class="section careers-intro">
+  <h1>Join the HARICON Team</h1>
+  <p>We're building the future of Harar — and we want you to be part of it. Explore open roles below and submit your application directly.</p>
+</section>
+
+<!-- Job Listings -->
+
+<form action="https://api.web3forms.com/submit" method="POST" class="job-form">
+  <input type="hidden" name="access_key" value="9e2af7c5-ae10-45f3-be17-98cba38571b6" />
+  <input type="hidden" name="subject" value="New Job Application from HARICON" />
+  <input type="hidden" name="from_name" value="HARICON Careers" />
+  <input type="hidden" name="redirect" value="thankyou.html" />
+
+  <div class="form-group">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+    <label for="Age">Age</label>
+    <input type="number" id="Age" name="Age" placeholder="Age" required />
+
+    <label for="experience">Work experience</label>
+    <input type="experience" id="experience" name="experience" placeholder=" Your Work Experience" required />
+
+
+
+  </div>
+
+  <div class="form-group">
+    <label for="degree">Highest Degree Achieved *</label>
+    <select id="degree" name="degree" required>
+      <option value="" disabled selected>Select your degree</option>
+      <option value="Diploma">Diploma</option>
+      <option value="Bachelor's Degree">Bachelor's Degree</option>
+      <option value="Master's Degree">Master's Degree</option>
+      <option value="PhD">PhD</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="position">Position Applying For *</label>
+    <input type="text" id="position" name="position" placeholder="e.g. Site Engineer" required />
+  </div>
+
+  <button type="submit" class="submit-btn">Submit Application</button>
+</form>
+
+
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="logo.png" alt="HARICON Logo" class="footer-logo" style="height:40px; width:auto; margin-bottom:8px;">
+        <p class="footer-copy">© 2025 HARICON. All rights reserved.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="nojobs.html">Jobs</a></li>
+        <li><a href="about-e.html">About</a></li>
+      </ul>
+      <div class="footer-contact">
+        <p><a href="mailto:info@haricon.com">info@haricon.com</a></p>
+        <p><a href="tel:+25196699991">+251 966 999 991</a></p>
+      </div>
+      <ul class="social-media">
+        <li><a href="https://web.facebook.com/profile.php?id=61577371787092" title="Facebook">Facebook</a></li>
+        <li><a href="https://x.com/HARICON2017" title="X">X</a></li>
+      </ul>
+    </div>
+    <a href="index.html" class="back-to-top">Back to Home</a>
+  </footer>
+
+</body>
+
+<script src="carrers.js"></script>
+
+</html>

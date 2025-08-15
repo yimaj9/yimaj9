@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.8rem;
+  gap: 10px;
+}
+
+.logo-link img {
+  width: 45px;
+  height: 45px;
+}
+
+/* Main Heading */
+h2 {
+  margin: 30px 0 15px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #111;
+}
+
+/* Paragraph */
+p {
+  max-width: 720px;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Project Details List */
+ul {
+  max-width: 720px;
+  list-style: none;
+  margin-bottom: 40px;
+  padding-left: 0;
+}
+
+ul li {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+  text-transform: capitalize;
+}
+
+/* Gallery */
+.gallery {
+  max-width: 900px;
+}
+
+.gallery h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  padding-top: 25px;
+  border-top: 2px solid #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 12px;
+}
+
+.social-icons span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin: 0 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(70%);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons span:hover {
+  filter: grayscale(0);
+}
+
+/* Example background images for social icons */
+/* You can replace these with your actual icon images */
+.social-icons .ig {
+  background-image: url('instagram-icon.png');
+}
+.social-icons .fb {
+  background-image: url('facebook-icon.png');
+}
+.social-icons .x {
+  background-image: url('twitter-icon.png');
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  body {
+    padding: 15px 10px;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  p, ul li {
+    font-size: 1rem;
+  }
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #dfe7f0;
+  color: rgb(138, 46, 46);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
