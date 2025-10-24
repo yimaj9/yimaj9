@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @yimaj
 - 👀 I’m interested in overall tech💻
-- 🌱 I finished frontend development 
+- 🌱 Trying to master Java script 
 - 📫 How to reach me yimajrahas@gmail.com
 - 
 
