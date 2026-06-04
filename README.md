@@ -1,9 +1,8 @@
 - 👋 Hi, I’m @yimaj
 - 👀 I’m interested in overall tech💻
-- 🌱 Trying to master Java script 
 - 📫 How to reach me {
   "email": "yimajrahas@gmail.com",
-  "instagram": "Yimaj21",
+  "instagram": "Yimaj_21",
   "linkedin": "Yimaj Rahas"
 }
 
